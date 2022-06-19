@@ -1,0 +1,326 @@
+22:01:51 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71216	    852	  19900	  91968	  16740	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:02:13 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71216	    852	  19900	  91968	  16740	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:09:26 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71020	    852	  19900	  91772	  1667c	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:13:55 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71032	    852	  19900	  91784	  16688	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:24:08 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71040	    852	  19900	  91792	  16690	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:24:31 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71040	    852	  19900	  91792	  16690	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:30:12 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71072	    852	  19900	  91824	  166b0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:30:42 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71072	    852	  19900	  91824	  166b0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:30:53 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71072	    852	  19900	  91824	  166b0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:34:08 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71064	    852	  19908	  91824	  166b0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:34:20 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71064	    852	  19908	  91824	  166b0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:36:55 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71064	    852	  19908	  91824	  166b0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:40:16 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71092	    852	  19908	  91852	  166cc	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:42:19 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19908	  91896	  166f8	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:43:26 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19908	  91896	  166f8	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:43:35 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19908	  91896	  166f8	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:48:17 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71068	    852	  19908	  91828	  166b4	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:48:47 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71068	    852	  19908	  91828	  166b4	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+22:57:59 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71108	    852	  19900	  91860	  166d4	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+22:58:11 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71108	    852	  19900	  91860	  166d4	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+23:02:37 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+23:03:19 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+23:03:29 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+23:03:56 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+23:04:29 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+23:04:38 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+23:06:24 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I../Drivers/VL53L0X/platform/inc -I../Drivers/VL53L0X/core/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Poloczone_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\adamj\Desktop\Studia\Semestr_6\SR\Projekt\Karta_Silnik_Dalmierz\Proba_1\Poloczone_1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Poloczone_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Poloczone_1.elf
+ 
+arm-none-eabi-objdump -h -S  Poloczone_1.elf  > "Poloczone_1.list"
+arm-none-eabi-objcopy  -O binary  Poloczone_1.elf  "Poloczone_1.bin"
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Poloczone_1.bin
+ 
+Finished building: Poloczone_1.list
+ 
+23:06:47 **** Incremental Build of configuration Debug for project Poloczone_1 ****
+make -j12 all 
+arm-none-eabi-size   Poloczone_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71136	    852	  19900	  91888	  166f0	Poloczone_1.elf
+Finished building: default.size.stdout
+ 

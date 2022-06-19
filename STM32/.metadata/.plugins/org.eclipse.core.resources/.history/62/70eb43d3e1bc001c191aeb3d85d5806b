@@ -1,0 +1,108 @@
+#include "gpio.h"
+#include "tim.h"
+#include "main.h"
+#include "StepMotor.h"
+
+
+volatile uint8_t i = 0;
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+	if(htim->Instance == TIM6){
+		i++;
+	}
+}
+
+
+
+void half_step_motor_left(uint32_t angle){
+
+	HAL_TIM_Base_Start_IT(&htim6);
+
+	uint32_t ac = 1;
+
+	for (; ac <= angle;){
+		if(i == 0){
+			HAL_GPIO_WritePin(OUT_2_GPIO_Port, OUT_2_Pin, GPIO_PIN_SET);
+		}
+		if(i == 1){
+			HAL_GPIO_WritePin(OUT_1_GPIO_Port, OUT_1_Pin, GPIO_PIN_RESET);
+		}
+		if(i == 2){
+			HAL_GPIO_WritePin(OUT_3_GPIO_Port, OUT_3_Pin, GPIO_PIN_SET);
+		}
+		if(i == 3){
+			HAL_GPIO_WritePin(OUT_2_GPIO_Port, OUT_2_Pin, GPIO_PIN_RESET);
+		}
+		if(i == 4){
+			HAL_GPIO_WritePin(OUT_4_GPIO_Port, OUT_4_Pin, GPIO_PIN_SET);
+		}
+		if(i == 5){
+			HAL_GPIO_WritePin(OUT_3_GPIO_Port, OUT_3_Pin, GPIO_PIN_RESET);
+		}
+		if(i == 6){
+			HAL_GPIO_WritePin(OUT_1_GPIO_Port, OUT_1_Pin, GPIO_PIN_SET);
+		}
+		if(i == 7){
+			HAL_GPIO_WritePin(OUT_4_GPIO_Port, OUT_4_Pin, GPIO_PIN_RESET);
+		}
+
+			if(i >= 8){
+				i = 0;
+				ac++;
+			}
+
+	}
+	HAL_GPIO_WritePin(OUT_1_GPIO_Port, OUT_1_Pin, GPIO_PIN_RESET);
+	HAL_TIM_Base_Stop_IT(&htim6);
+
+
+}
+
+
+
+void half_step_motor_right(uint32_t angle){
+
+	HAL_TIM_Base_Start_IT(&htim6);
+
+	uint32_t ac = 1;
+
+
+	for (; ac <= angle;){
+
+
+		if(i == 0){
+			HAL_GPIO_WritePin(OUT_3_GPIO_Port, OUT_3_Pin, GPIO_PIN_SET);
+		}
+		if(i == 1){
+			HAL_GPIO_WritePin(OUT_4_GPIO_Port, OUT_4_Pin, GPIO_PIN_RESET);
+		}
+		if(i == 2){
+			HAL_GPIO_WritePin(OUT_2_GPIO_Port, OUT_2_Pin, GPIO_PIN_SET);
+		}
+		if(i == 3){
+			HAL_GPIO_WritePin(OUT_3_GPIO_Port, OUT_3_Pin, GPIO_PIN_RESET);
+		}
+		if(i == 4){
+			HAL_GPIO_WritePin(OUT_1_GPIO_Port, OUT_1_Pin, GPIO_PIN_SET);
+		}
+		if(i == 5){
+			HAL_GPIO_WritePin(OUT_2_GPIO_Port, OUT_2_Pin, GPIO_PIN_RESET);
+		}
+		if(i == 6){
+			HAL_GPIO_WritePin(OUT_4_GPIO_Port, OUT_4_Pin, GPIO_PIN_SET);
+		}
+		if(i == 7){
+			HAL_GPIO_WritePin(OUT_1_GPIO_Port, OUT_1_Pin, GPIO_PIN_RESET);
+		}
+		if(i >= 8){
+			i = 0;
+			ac++;
+		}
+
+	}
+	HAL_GPIO_WritePin(OUT_4_GPIO_Port, OUT_4_Pin, GPIO_PIN_RESET);
+	HAL_TIM_Base_Stop_IT(&htim6);
+
+
+}
